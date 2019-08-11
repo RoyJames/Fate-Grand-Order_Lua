@@ -21,8 +21,8 @@ end
 --***************************************************************************
 --スタミナ自動補充
 Refill_Enabled = 1
-Refill_Resource = "Gold"
-Refill_Repetitions = 50
+Refill_Resource = "Silver"
+Refill_Repetitions = 100
 
 --サポートサーヴァント自動選択
 Support_SelectionMode = "preferred"
@@ -30,22 +30,22 @@ Support_SwipesPerUpdate = 10
 Support_MaxUpdates = 30
 Support_FallbackTo = "manual"
 Support_FriendsOnly = 0
-Support_PreferredServants = "any"
-Support_PreferredCEs = "*bella.png"
+Support_PreferredServants = "waver4.png, waver3.png, waver2.png, waver1.png"
+Support_PreferredCEs = "*teatime.png"
 
 --オートスキル
 Enable_Autoskill = 1
 Skill_Confirmation = 0
-Skill_Command = "cef1gi14,#,4,#,4"
+Skill_Command = "ce4,#,afg6,#,d1cjk14"
 
 --オートスキルリスト
 Enable_Autoskill_List = 0
 
-Autoskill_List[1][1] = "QP"
-Autoskill_List[1][2] = "cef1gi1,#,0,#,0"
+Autoskill_List[1][1] = "Tanebi"
+Autoskill_List[1][2] = "cf,#,ef,#,a3"
 
-Autoskill_List[2][1] = "Settings No.2"
-Autoskill_List[2][2] = ""
+Autoskill_List[2][1] = "QP"
+Autoskill_List[2][2] = "cef1gi1,#,0,#,0"
 
 Autoskill_List[3][1] = "Settings No.3"
 Autoskill_List[3][2] = ""
@@ -72,13 +72,13 @@ Autoskill_List[10][1] = "Settings No.10"
 Autoskill_List[10][2] = ""
 
 --カード選択順位変更
-Battle_CardPriority = "BQA"
+Battle_CardPriority = "WB, WQ, WA, B, A, Q, RA, RQ, RB"
 --目標自動選択
 Battle_AutoChooseTarget = 0
 --宝具自動使用
 Battle_NoblePhantasm = "disabled"
 --エネミーと味方の消滅短縮
-UnstableFastSkipDeadAnimation = 0
+UnstableFastSkipDeadAnimation = 1
 --イベントステージ
 isEvent = 0
 

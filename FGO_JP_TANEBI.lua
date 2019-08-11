@@ -74,7 +74,7 @@ Autoskill_List[10][2] = ""
 --カード選択順位変更
 Battle_CardPriority = "WA, WQ, A, Q, RA, RQ, WB, B, RB"
 --目標自動選択
-Battle_AutoChooseTarget = 1
+Battle_AutoChooseTarget = 0
 --宝具自動使用
 Battle_NoblePhantasm = "disabled"
 --エネミーと味方の消滅短縮
