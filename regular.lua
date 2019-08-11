@@ -124,24 +124,24 @@ local function Result()
 	end
 	
 	--Only for JP currently. Searches for the Continue option after select Free Quests
-	if game.CONTINUE_REGION:exists(GeneralImagePath .. "confirm.png") then
+	if GameRegion == "JP" and game.CONTINUE_REGION:exists(GeneralImagePath .. "confirm.png") then
 		IsContinuing = 1 -- Needed to show we don't need to enter the "StartQuest" function
-		
+
 		-- Pressing Continue option after completing a quest, reseting the state as would occur in "Menu" function
 		click(game.CONTINUE_CLICK)
 		battle.resetState()
 		turnCounter = {0, 0, 0, 0, 0}
-		
+
 		wait(1.5)
-		
+
 		--If Stamina is empty, follow same protocol as is in "Menu" function
-                --Auto refill.
+		--Auto refill.
 		while game.STAMINA_SCREEN_REGION:exists(GeneralImagePath .. "stamina.png") do
 			RefillStamina()
 		end
 	else
 		wait(5)
-		
+
 		--Friend request dialogue. Appears when non-friend support was selected this battle.  Ofc it's defaulted not sending request.
 		if game.RESULT_FRIEND_REQUEST_REGION:exists(GeneralImagePath .. "friendrequest.png") ~= nil then
 			click(game.RESULT_FRIEND_REQUEST_REJECT_CLICK)
