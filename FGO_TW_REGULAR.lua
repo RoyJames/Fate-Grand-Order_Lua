@@ -31,6 +31,7 @@ Support_SwipesPerUpdate = 10
 Support_MaxUpdates = 3
 Support_FallbackTo = "manual"
 Support_FriendsOnly = 0
+Support_FriendNames = ""
 Support_PreferredServants = "waver4.png, waver3.png, waver2.png, waver1.png"
 Support_PreferredCEs = "*chaldea_lunchtime.png"
 
@@ -47,6 +48,10 @@ BoostItem_SelectionMode = "disabled" --[[
 	
 	TODO: move this explanation to the documentation
 --]]
+
+StorySkip = 0 --[[
+	People really want this feature.
+]]
 
 --自動施放技能
 Enable_Autoskill = 0
